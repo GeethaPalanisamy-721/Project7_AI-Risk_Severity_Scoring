@@ -122,19 +122,19 @@ This file serves as the monitoring dataset.
 
 Power BI dashboard includes:
 
-Total Cases
+1.Total Cases
 
-High Risk %
+2.High Risk %
 
-Escalation %
+3.Escalation %
 
-Model Agreement %
+4.Model Agreement %
 
-Average Score Difference
+5.Average Score Difference
 
-Severity distribution
+6.Severity distribution
 
-Score trend over time
+7.Score trend over time
 
 The dashboard auto-updates when new rows are appended and refreshed.
 
