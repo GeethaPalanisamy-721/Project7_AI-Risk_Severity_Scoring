@@ -78,7 +78,7 @@ Flag escalation if severity is HIGH
 
 This introduces model governance monitoring, not just prediction.
 
-### Backend: FastAPI
+## Backend: FastAPI
 
 Features:
 
@@ -100,7 +100,7 @@ Async-ready
 
 Industry-standard for ML serving 
 
-### Frontend: Streamlit
+## Frontend: Streamlit
 
 Streamlit is used to:
 
@@ -114,7 +114,7 @@ Display escalation & agreement flags
 
 This layer simulates a lightweight internal risk review tool.
 
-### Monitoring & Analytics: Power BI
+## Monitoring & Analytics: Power BI
 
 The system logs each prediction into predictions_log.csv.
 This file serves as the monitoring dataset.
@@ -160,7 +160,7 @@ Score trend over time
 
 The dashboard auto-updates when new rows are appended and refreshed.
 
-### Key Concepts Demonstrated
+## Key Concepts Demonstrated
 
 NLP Feature Engineering
 
@@ -178,7 +178,7 @@ Governance-aware architecture
 
 BI-based model analytics
 
-### Tech Stack
+## Tech Stack
 
 Python
 
@@ -196,7 +196,7 @@ Pandas
 
 Joblib
 
-### Why This Project Matters
+## Why This Project Matters
 
 This is not just a model. It demonstrates understanding of:
 
@@ -215,7 +215,7 @@ Business-facing dashboards
 The project bridges:
 Data Science → Backend Engineering → BI Analytics
 
-#### How to Run
+## How to Run
 
 1.Install Dependencies
 
@@ -233,7 +233,7 @@ streamlit run streamlit_app.py
 
 Load predictions_log.csv and refresh.
 
-### Author Perspective
+## Author Perspective
 
 This project was built to simulate a realistic ML system that goes beyond model training and demonstrates:
 	• End-to-end system thinking
