@@ -41,9 +41,10 @@ Prediction Logging (CSV)
 Power BI Dashboard (Monitoring Layer)
 ```
 
-##Machine Learning Pipeline
+## Machine Learning Pipeline
 
-###Model 1: TF-IDF + Traditional ML
+### Model 1: TF-IDF + Traditional ML
+
 Text vectorized using TF-IDF
 
 Trained classification/regression model
@@ -52,7 +53,8 @@ Outputs risk severity score (0–100)
 
 Purpose: Baseline interpretable NLP model
 
-###Model 2: LLM Embedding + ML Model
+### Model 2: LLM Embedding + ML Model
+
 Sentence embeddings generated via transformer-based embedder
 
 Separate ML model trained on embeddings
@@ -61,7 +63,7 @@ Outputs independent risk score
 
 Purpose: Compare classical NLP vs modern embedding-based representation
 
-Model Comparison Logic
+### Model Comparison Logic
 For every input:
 
 Compute TF-IDF score
@@ -76,7 +78,8 @@ Flag escalation if severity is HIGH
 
 This introduces model governance monitoring, not just prediction.
 
-Backend: FastAPI
+### Backend: FastAPI
+
 Features:
 
 /predict endpoint
@@ -97,7 +100,8 @@ Async-ready
 
 Industry-standard for ML serving 
 
-Frontend: Streamlit
+### Frontend: Streamlit
+
 Streamlit is used to:
 
 Provide interactive text input
@@ -110,7 +114,8 @@ Display escalation & agreement flags
 
 This layer simulates a lightweight internal risk review tool.
 
-Monitoring & Analytics: Power BI
+### Monitoring & Analytics: Power BI
+
 The system logs each prediction into predictions_log.csv.
 This file serves as the monitoring dataset.
 
@@ -132,7 +137,8 @@ Score trend over time
 
 The dashboard auto-updates when new rows are appended and refreshed.
 
-Monitoring & Analytics: Power BI
+### Monitoring & Analytics: Power BI
+
 The system logs each prediction into predictions_log.csv.
 This file serves as the monitoring dataset.
 
@@ -154,7 +160,8 @@ Score trend over time
 
 The dashboard auto-updates when new rows are appended and refreshed.
 
-Key Concepts Demonstrated
+### Key Concepts Demonstrated
+
 NLP Feature Engineering
 
 Transformer Embeddings
@@ -171,7 +178,8 @@ Governance-aware architecture
 
 BI-based model analytics
 
-Tech Stack
+### Tech Stack
+
 Python
 
 scikit-learn
@@ -188,7 +196,8 @@ Pandas
 
 Joblib
 
-Why This Project Matters
+### Why This Project Matters
+
 This is not just a model. It demonstrates understanding of:
 
 ML pipeline lifecycle
@@ -206,7 +215,8 @@ Business-facing dashboards
 The project bridges:
 Data Science → Backend Engineering → BI Analytics
 
-How to Run
+#### How to Run
+
 1.Install Dependencies
 
 pip install -r requirements.txt
@@ -223,7 +233,8 @@ streamlit run streamlit_app.py
 
 Load predictions_log.csv and refresh.
 
-Author Perspective
+### Author Perspective
+
 This project was built to simulate a realistic ML system that goes beyond model training and demonstrates:
 	• End-to-end system thinking
 	• Production considerations
