@@ -45,36 +45,37 @@ Power BI Dashboard (Monitoring Layer)
 
 ### Model 1: TF-IDF + Traditional ML
 
-Text vectorized using TF-IDF
+- Text vectorized using TF-IDF
 
-Trained classification/regression model
+- Trained classification/regression model
 
-Outputs risk severity score (0–100)
+- Outputs risk severity score (0–100)
 
 Purpose: Baseline interpretable NLP model
 
 ### Model 2: LLM Embedding + ML Model
 
-Sentence embeddings generated via transformer-based embedder
+- Sentence embeddings generated via transformer-based embedder
 
-Separate ML model trained on embeddings
+- Separate ML model trained on embeddings
 
-Outputs independent risk score
+- Outputs independent risk score
 
 Purpose: Compare classical NLP vs modern embedding-based representation
 
 ### Model Comparison Logic
+
 For every input:
 
-Compute TF-IDF score
+- Compute TF-IDF score
 
-Compute LLM-based score
+- Compute LLM-based score
 
-Calculate score difference
+- Calculate score difference
 
-Detect model agreement/disagreement
+- Detect model agreement/disagreement
 
-Flag escalation if severity is HIGH
+- Flag escalation if severity is HIGH
 
 This introduces model governance monitoring, not just prediction.
 
@@ -82,35 +83,35 @@ This introduces model governance monitoring, not just prediction.
 
 Features:
 
-/predict endpoint
+- /predict endpoint
 
-JSON-based inference
+- JSON-based inference
 
-Structured response schema
+- Structured response schema
 
-Logging layer for monitoring
+- Logging layer for monitoring
 
-Production-ready model loading using joblib
+- Production-ready model loading using joblib
 
 Why FastAPI?
 
-High performance
+- High performance
 
-Async-ready
+- Async-ready
 
-Industry-standard for ML serving 
+- Industry-standard for ML serving 
 
 ## Frontend: Streamlit
 
 Streamlit is used to:
 
-Provide interactive text input
+- Provide interactive text input
 
-Display dual model scores
+- Display dual model scores
 
-Show severity classification
+- Show severity classification
 
-Display escalation & agreement flags
+- Display escalation & agreement flags
 
 This layer simulates a lightweight internal risk review tool.
 
@@ -144,73 +145,47 @@ This file serves as the monitoring dataset.
 
 Power BI dashboard includes:
 
-Total Cases
-
-High Risk %
-
-Escalation %
-
-Model Agreement %
-
-Average Score Difference
-
-Severity distribution
-
-Score trend over time
+Total Cases, High Risk %, Escalation %, Model Agreement %, Average Score Difference, Severity distribution, Score trend over time
 
 The dashboard auto-updates when new rows are appended and refreshed.
 
 ## Key Concepts Demonstrated
 
-NLP Feature Engineering
+- NLP Feature Engineering
 
-Transformer Embeddings
+- Transformer Embeddings
 
-Multi-model comparison
+- Multi-model comparison
 
-ML API serving
+- ML API serving
 
-Frontend-backend integration
+- Frontend-backend integration
 
-Monitoring pipeline design
+- Monitoring pipeline design
 
-Governance-aware architecture
+- Governance-aware architecture
 
-BI-based model analytics
+- BI-based model analytics
 
 ## Tech Stack
 
-Python
-
-scikit-learn
-
-Transformer Embeddings
-
-FastAPI
-
-Streamlit
-
-Power BI
-
-Pandas
-
-Joblib
+Python | scikit-learn | Transformer Embeddings | FastAPI | Streamlit | Power BI | Pandas | Joblib
 
 ## Why This Project Matters
 
 This is not just a model. It demonstrates understanding of:
 
-ML pipeline lifecycle
+- ML pipeline lifecycle
 
-Serving models in production
+- Serving models in production
 
-Logging and traceability
+- Logging and traceability
 
-Model disagreement analysis
+- Model disagreement analysis
 
-Governance and escalation logic
+- Governance and escalation logic
 
-Business-facing dashboards
+- Business-facing dashboards
 
 The project bridges:
 Data Science → Backend Engineering → BI Analytics
