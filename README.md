@@ -41,8 +41,9 @@ Prediction Logging (CSV)
 Power BI Dashboard (Monitoring Layer)
 ```
 
-Machine Learning Pipeline
-Model 1: TF-IDF + Traditional ML
+##Machine Learning Pipeline
+
+###Model 1: TF-IDF + Traditional ML
 Text vectorized using TF-IDF
 
 Trained classification/regression model
@@ -51,7 +52,7 @@ Outputs risk severity score (0–100)
 
 Purpose: Baseline interpretable NLP model
 
-Model 2: LLM Embedding + ML Model
+###Model 2: LLM Embedding + ML Model
 Sentence embeddings generated via transformer-based embedder
 
 Separate ML model trained on embeddings
